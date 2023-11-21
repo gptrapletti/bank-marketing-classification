@@ -1,0 +1,8 @@
+data/
+__pycache__/
+temp/
+
+.pyc
+.env
+
+metrics.csv
