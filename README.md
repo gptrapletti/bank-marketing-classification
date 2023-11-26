@@ -1,14 +1,15 @@
 # Bank Marketing classification
 
-## Sources
+## Introduction
+The objective of this project is to build the most effective predictive model for bank marketers using the provided dataset. The aim is to create a model suitable for real-world deployment, with the primary goal of maximizing the success of marketing campaigns in terms of both bank deposit subscriptions and marketing effort.
 
+## Sources
 - [1] Pubblication: _Moro, S., Laureano, R., & Cortez, P. (2011). Using data mining for bank direct marketing: An application of the crisp-dm methodology._
 - [2] Kaggle for the data: https://www.kaggle.com/competitions/bank-marketing-uci
 - [3] Kaggle solution: https://www.kaggle.com/code/antonias/bank-campaign-prediction#final-submission
 
 
-## Dataset description
-
+## Data
 The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be (or not) subscribed. The classification goal is to predict if the client will subscribe a term deposit (variable y).
 
 Features:
@@ -33,17 +34,11 @@ Target:
 - y: has the client subscribed a term deposit? (binary: "yes", "no").
 
 
-## Aim
-
-The aim of this project is to fit the the best predictive model for the bank marketers, that is a model to be used in the real world scenario to make the marketing campaign the most successful possible, in terms of both bank deposit subscribtions and effort. 
-
-
 
 ## Todo
-
-- Random forest feature importance --> randomized search  + cross-validation
-- ROC
-- K-fold.
-- XGBoost (with sklearn and also its dedicated library)
-- try without NA imputation
-- try add more binned and new features
+- [x] Add random forest feature importance.
+- [x] Add AUROC metric.
+- [ ] Implement cross-validation with hyperparameter search by randomized search.
+- [ ] Fit a XGBoost model (by sklearn and also its dedicated library).
+- [ ] Check performances without NA imputation.
+- [ ] Check if by adding more binned and new features the performance increases.
